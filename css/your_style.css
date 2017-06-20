@@ -1,0 +1,102 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+ .btn-purple {
+    color: #fff;
+    background-color: #6e587a;
+    border-color: #64546d;
+}
+
+ .btn-purple:hover {
+    color: #fff;
+    background-color: #543c61;;
+    border-color: #64546d;
+}
+.sistemas{
+    
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;    
+    color: #fff;
+    
+}
+
+.sistemas ul{
+    
+    padding: 0px 0px 10px;
+    list-style: none;
+    margin: 0;    
+    
+}
+
+.sistemas ul a:hover{
+    color: #fff;
+}
+
+.auto-complete{
+    padding-top: 39px;
+}
+
+.jarvismetro-tile.big-cubes {
+    height: 138px;
+}
+
+
+/*animação*/
+#content2,
+		#sidebar2 {
+			min-height: 500px;
+		}
+		#row-main2 {
+			overflow-x: hidden; /* necessary to hide collapsed sidebar */
+		}
+		#content2 {
+			
+			
+			-webkit-transition: width 0.3s ease;
+			-moz-transition: width 0.3s ease;
+			-o-transition: width 0.3s ease;
+			transition: width 0.3s ease;
+		}
+		#content2 .btn-group {
+			margin-bottom: 10px;
+		}
+		.col-md-9 .width-12,
+		.col-md-12 .width-9 {
+			display: none; /* just hiding labels for demo purposes */
+		}
+		#sidebar2 {
+			
+			
+			-webkit-transition: margin 0.3s ease;
+			-moz-transition: margin 0.3s ease;
+			-o-transition: margin 0.3s ease;
+			transition: margin 0.3s ease;
+		}
+		.collapsed {
+			display: none; /* hide it for small displays */
+		}
+		@media (min-width: 992px) {
+			.collapsed {
+				display: block;
+				margin-right: -25%; /* same width as sidebar */
+			}
+		}
