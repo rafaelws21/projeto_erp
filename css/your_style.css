@@ -100,3 +100,28 @@
 				margin-right: -25%; /* same width as sidebar */
 			}
 		}
+#main {
+    margin-left: 0px;   
+}
+
+.login-header {
+    display: block;
+    font-size: 10px;
+    height: 39px;
+    color: #fff;   
+    width: 100%;
+    
+}
+
+
+
+.login-header img {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    margin-right: 5px;
+    margin-left: 0;
+    border-left: 3px solid #fff;
+}
