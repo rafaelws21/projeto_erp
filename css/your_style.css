@@ -1,18 +1,18 @@
 /*
  * It is advised not to edit the smartadmin_production.css
- * as this will override any changes you make in the 
- * later versions of this theme. 
- * 
- * We advise that you use use this CSS to override 
- * SmartAdmin styles. 
- * 
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
  * Rename the stylesheet to whatever your liking so it will stay
  * unique to you with each update of SmartAdmin.
  */
 
 /*
  * INDEX
- * 
+ *
  * - HTML
  * - BODY
  * - CUSTOM STYLES
@@ -30,21 +30,21 @@
     border-color: #64546d;
 }
 .sistemas{
-    
+
     top: 0;
     left: 0;
     height: auto;
-    width: 100%;    
+    width: 100%;
     color: #fff;
-    
+
 }
 
 .sistemas ul{
-    
+
     padding: 0px 0px 10px;
     list-style: none;
-    margin: 0;    
-    
+    margin: 0;
+
 }
 
 .sistemas ul a:hover{
@@ -69,8 +69,8 @@
 			overflow-x: hidden; /* necessary to hide collapsed sidebar */
 		}
 		#content2 {
-			
-			
+
+
 			-webkit-transition: width 0.3s ease;
 			-moz-transition: width 0.3s ease;
 			-o-transition: width 0.3s ease;
@@ -84,8 +84,8 @@
 			display: none; /* just hiding labels for demo purposes */
 		}
 		#sidebar2 {
-			
-			
+
+
 			-webkit-transition: margin 0.3s ease;
 			-moz-transition: margin 0.3s ease;
 			-o-transition: margin 0.3s ease;
@@ -101,16 +101,16 @@
 			}
 		}
 #main {
-    margin-left: 0px;   
+    margin-left: 0px;
 }
 
 .login-header {
     display: block;
     font-size: 10px;
     height: 39px;
-    color: #fff;   
+    color: #fff;
     width: 100%;
-    
+
 }
 
 
@@ -132,7 +132,7 @@
     height: 39px;
     color: #fff;
     border: solid transparent;
-    border-width: 1px 0;    
+    border-width: 1px 0;
     width: 100%;
     margin: 0!important;
     border-bottom: 1px solid #525151;
@@ -157,4 +157,8 @@
 
 #project-context>:first-child, .project-context>:first-child {
     color: #686868;
+}
+
+#logout.btn-header>:first-child>a {
+    padding: 0;
 }
