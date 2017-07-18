@@ -423,8 +423,9 @@
 
 
 											<footer>
+
 												<button type="submit" class="btn btn-primary">
-													Submit
+													Consultar <i class="fa fa-seach"></i>
 												</button>
 												<button type="button" class="btn btn-default" onclick="window.history.back();">
 													Back
@@ -441,8 +442,99 @@
 							</div>
 							<!-- end widget -->
 
+
+
+
+
 						</article>
 						<!-- END COL -->
+
+							<!-- NEW TABLE -->
+						<article class="col-sm-12 col-md-12 col-lg-12">
+
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-pink" id="wid-id-2" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>Resultado das Pesquisas</h2>
+
+								</header>
+
+								<!-- widget div-->
+								<div>
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+
+										<div class="alert alert-info no-margin fade in">
+											<button class="close" data-dismiss="alert">
+												×
+											</button>
+											<i class="fa-fw fa fa-info"></i>
+											Informação de pesquisa
+										</div>
+										<div class="table-responsive">
+
+											<table id="dt_basic" class="table table-hover">
+												<thead>
+													<tr>
+														<th data-class="expand"> <i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Número</th>
+														<th data-hide="phone">Solicitações</th>
+														<th data-hide="phone,tablet">Área Contratante</th>
+														<th data-hide="phone,tablet">Data Cadastro</th>
+														<th data-hide="phone,tablet">Sistema</th>
+														<th data-hide="phone,tablet">Descrição</th>
+														<th data-hide="phone,tablet">Situação</th>
+														<th data-hide="phone,tablet">Ação</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>RJ201402351</td>
+														<td>549029</td>
+														<td>CDDERJ020</td>
+														<td>20/11/2014</td>
+														<td>SUPORTE</td>
+														<td>Migração dos valores de sustentação do SIGCP no período de dezembro/2012 a abril/2014</td>
+														<td>Em Andamento</td>
+														<td></td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+									<!-- end widget content -->
+
+								</div>
+								<!-- end widget div -->
+
+							</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
 
 
 					</div>
@@ -630,6 +722,13 @@
 		<script src="../js/smart-chat-ui/smart.chat.ui.min.js"></script>
 		<script src="../js/smart-chat-ui/smart.chat.manager.min.js"></script>
 
+		<!-- PAGE RELATED PLUGIN(S) -->
+		<script src="../js/plugin/datatables/jquery.dataTables.min.js"></script>
+		<script src="../js/plugin/datatables/dataTables.colVis.min.js"></script>
+		<script src="../js/plugin/datatables/dataTables.tableTools.min.js"></script>
+		<script src="../js/plugin/datatables/dataTables.bootstrap.min.js"></script>
+		<script src="../js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+
 		<!-- PAGE RELATED PLUGIN(S)
 		<script src="..."></script>-->
 
@@ -641,7 +740,44 @@
 
 		$(document).ready(function() {
 
+
 			pageSetUp();
+
+			/* BASIC ;*/
+				var responsiveHelper_dt_basic = undefined;
+				var responsiveHelper_datatable_fixed_column = undefined;
+				var responsiveHelper_datatable_col_reorder = undefined;
+				var responsiveHelper_datatable_tabletools = undefined;
+
+				var breakpointDefinition = {
+					tablet : 1024,
+					phone : 480
+				};
+
+				$('#dt_basic').dataTable({
+					"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs'l>r>"+
+						"t"+
+						"<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+					"autoWidth" : true,
+			        "oLanguage": {
+					    "sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>'
+					},
+					"preDrawCallback" : function() {
+						// Initialize the responsive datatables helper once.
+						if (!responsiveHelper_dt_basic) {
+							responsiveHelper_dt_basic = new ResponsiveDatatablesHelper($('#dt_basic'), breakpointDefinition);
+						}
+					},
+					"rowCallback" : function(nRow) {
+						responsiveHelper_dt_basic.createExpandIcon(nRow);
+					},
+					"drawCallback" : function(oSettings) {
+						responsiveHelper_dt_basic.respond();
+					}
+				});
+				$('.dataTables_filter').hide();
+
+			/* END BASIC */
 
 		})
 
