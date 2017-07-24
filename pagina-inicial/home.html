@@ -26,7 +26,7 @@
 
   <!-- We recommend you use "your_style.css" to override SmartAdmin
 		     specific styles this will also ensure you retrain your customization with each SmartAdmin update.
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/your_style.css"> -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
 
   <!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
   <link rel="stylesheet" type="text/css" media="screen" href="../css/demo.min.css">
@@ -56,14 +56,11 @@
 
 </head>
 
-
 <body class="">
 
   <!-- HEADER -->
-  <script src="../js/barra-superior/menu.js"></script>
+    <script src="../js/barra-superior/menu.js"></script>
   <!-- END HEADER -->
-
-
 
   <!-- MAIN PANEL -->
   <div id="main" role="main">
@@ -79,27 +76,25 @@
 
       <!-- breadcrumb -->
       <ol class="breadcrumb">
-        <li>Seleção ></li>
-        <li>Pagina Inicial</li>
+        <li>Seleção de Sistema></li>
       </ol>
-      <!-- end breadcrumb -->
-
-      <!-- You can also add more buttons to the
-				ribbon for further usability
-
-				Example below:
-
-				<span class="ribbon-button-alignment pull-right">
-				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
-				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
-				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
-				</span> -->
 
     </div>
     <!-- END RIBBON -->
 
     <!-- MAIN CONTENT -->
     <div id="content">
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+          <h1 class="page-title txt-color-blueDark">
+            <i class="fa-fw fa fa-home"></i> Seleção de Sistemas
+          </h1>
+        </div>
+      </div>
+
+
 
       <!-- widget grid -->
       <section id="widget-grid" class="">
@@ -115,126 +110,144 @@
           </div> -->
           <article class="col-sm-12 col-md-12 col-lg-12">
             <div class="col-md-12">
-                <h4>Exemplo Diretório</h4>
-              </div>
-              <br/>
+              <h4>Selecione o sistema <small>ou clique no filtro de pesquisa</small></h4>
+            </div>
+            <br/>
           </article>
 
           <article class="col-sm-12 col-md-12 col-lg-12">
 
-            <div class="tree smart-form">
-              <ul>
-                <li>
-                  <span><i class="fa fa-lg fa-folder-open"></i> Cadastro</span>
+
+            <div class="" id="row-main2">
+              <div class="col-md-12" id="content2">
+
+                <div class="btn-group" role="group" aria-label="Controls">
+                  <button type="button" class="btn btn-warning toggle-sidebar2"><i class="fa fa-filter"></i> Filtro</button>
+                </div>
+                <div class="sistemas">
                   <ul>
-                    <li>
-                      <span><i class="fa fa-lg fa-folder"></i> Demanda</span>
-                      <ul>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/consultar-demanda.html">Consultar</a>
-                          </span>
-                        </li>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/incluir-demanda.html">Incluir</a>
-                          </span>
-                        </li>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/cancela-demanda.html">Cancelar</a>
-                          </span>
-                        </li>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/detalhar-alterar-demanda.html">Detalhar/Alterar</a>
-                          </span>
-                        </li>
-                         <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/painel-demanda.html">Painel</a>
-                          </span>
-                        </li>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/suspender-demanda.html">Suspender</a>
-                          </span>
-                        </li>
-                        <li style="display:none">
-                          <span>
-                            <i class="icon-leaf"></i>
-                            <a href="../matem-demananda/historico-demanda.html">Histórico</a>
-                          </span>
-                        </li>
-                        <!-- <li style="display:none">
-                          <span> <label class="checkbox inline-block">
-                              <input type="checkbox" name="checkbox-inline">
-                              <i></i>Michael.Jackson</label> </span>
-                        </li>
-                         <li style="display:none">
-                          <span> <label class="checkbox inline-block">
-                              <input type="checkbox" checked="checked" name="checkbox-inline">
-                              <i></i>Sunny.Ahmed</label> </span>
-                        </li>
-                        <li style="display:none">
-                          <span> <label class="checkbox inline-block">
-                              <input type="checkbox" checked="checked" name="checkbox-inline">
-                              <i></i>Jackie.Chan</label> </span>
-                        </li>  -->
-                      </ul>
+                    <li class="tipo-sistemas">
+                      <a href="../pagina-inicial/pagina-inicial.html" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-group fa-4x"></i> <span value="Empregado">Exemplo Diretórios </span> </span> </a>
                     </li>
-                    <li>
-                      <span><i class="fa fa-lg fa-folder-open"></i> Pai</span>
-                      <ul>
-                        <li>
-                          <span><i class="icon-leaf"></i> Filho</span>
-                        </li>
-                        <li>
-                          <span><i class="icon-leaf"></i> Filho</span>
-                        </li>
-                        <li>
-                          <span><i class="fa fa-lg fa-folder"></i> Filho</span>
-                          <ul>
-                            <li style="display:none">
-                              <span><i class="fa fa-lg fa-folder"></i> Neto</span>
-                              <ul>
-                                <li style="display:none">
-                                  <span><i class="icon-leaf"></i> Neto</span>
-                                </li>
-                                <li style="display:none">
-                                  <span><i class="icon-leaf"></i> Neto</span>
-                                </li>
-                              </ul>
-                            </li>
-                            <li style="display:none">
-                              <span><i class="icon-leaf"></i> Neto</span>
-                            </li>
-                            <li style="display:none">
-                              <span><i class="icon-leaf"></i> Neto</span>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
+                    <li class="tipo-sistemas">
+                      <a href="calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-cubes fa-4x"></i> <span value="Sistema 02">Sistema 02</span> </span> </a>
+                    </li>
+                    <li class="tipo-sistemas">
+                      <a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-cubes fa-4x"></i> <span value="Sistema 03">Sistema 03</span> </span> </a>
+                    </li>
+                    <li class="tipo-sistemas">
+                      <a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-cubes fa-4x"></i> <span value="Sistema 04">Sistema 04 <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
+                    </li>
+                    <li class="tipo-sistemas">
+                      <a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-cubes fa-4x"></i> <span value="Sistema 05">Sistema 05 </span> </span> </a>
+                    </li>
+                    <li class="tipo-sistemas">
+                      <a href="profile.html" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-cubes fa-4x"></i> <span value="Sistema 06">Sistema 06 </span> </span> </a>
                     </li>
                   </ul>
-                </li>
-              </ul>
+                </div>
+              </div>
+              <div class="col-md-3 auto-complete collapsed" id="sidebar2">
+                <div class="well well-sm ">
+                  <div class="input-group">
+                    <input class="form-control input-lg" type="text" id="pesquisar-sitema" placeholder="Pesquisar sistema...">
+                    <span class="input-group-addon"><i class="fa fa-fw fa-lg fa-search"></i></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
         </div>
+
         <!-- END ROW -->
+
       </section>
       <!-- end widget grid -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+              <h4 class="modal-title">
+                <img src="../img/logo.png" width="150" alt="SmartAdmin">
+              </h4>
+            </div>
+            <div class="modal-body no-padding">
+
+              <form id="login-form" class="smart-form">
+
+                <fieldset>
+                  <section>
+                    <div class="row">
+                      <label class="label col col-2">Username</label>
+                      <div class="col col-10">
+                        <label class="input"> <i class="icon-append fa fa-user"></i>
+												<input type="email" name="email">
+											</label>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="row">
+                      <label class="label col col-2">Password</label>
+                      <div class="col col-10">
+                        <label class="input"> <i class="icon-append fa fa-lock"></i>
+												<input type="password" name="password">
+											</label>
+                        <div class="note">
+                          <a href="javascript:void(0)">Forgot password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <div class="row">
+                      <div class="col col-2"></div>
+                      <div class="col col-10">
+                        <label class="checkbox">
+												<input type="checkbox" name="remember" checked="">
+												<i></i>Keep me logged in</label>
+                      </div>
+                    </div>
+                  </section>
+                </fieldset>
+
+
+                <footer>
+                  <button type="submit" class="btn btn-primary">
+									Sign in
+								</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">
+									Cancel
+								</button>
+
+                </footer>
+              </form>
+
+
+            </div>
+
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+
     </div>
     <!-- END MAIN CONTENT -->
+
   </div>
   <!-- END MAIN PANEL -->
+
   <!-- PAGE FOOTER -->
   <div class="page-footer">
     <div class="row">
@@ -306,14 +319,14 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     if (!window.jQuery) {
-      document.write('<script src="../js/libs/jquery-2.1.1.min.js"><\/script>');
+      document.write('<script src="../j../s/libs/jquery-2.1.1.min.js"><\/script>');
     }
   </script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script>
     if (!window.jQuery.ui) {
-      document.write('<script src="../js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+      document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
     }
   </script>
 
@@ -382,35 +395,6 @@
   <!-- PAGE RELATED PLUGIN(S) -->
   <script src="../js/plugin/jquery-form/jquery-form.min.js"></script>
 
-
-
-
-		<script type="text/javascript">
-
-		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-
-		$(document).ready(function() {
-
-			pageSetUp();
-
-			// PAGE RELATED SCRIPTS
-
-			$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
-			$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
-				var children = $(this).parent('li.parent_li').find(' > ul > li');
-				if (children.is(':visible')) {
-					children.hide('fast');
-					$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-folder');
-				} else {
-					children.show('fast');
-					$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-folder-open');
-				}
-				e.stopPropagation();
-			});
-
-		})
-
-		</script>
 
   <script type="text/javascript">
     // DO NOT REMOVE : GLOBAL FUNCTIONS!
