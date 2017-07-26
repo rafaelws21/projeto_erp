@@ -2,7 +2,12 @@
   <header id="header">\
       <div id="logo-group">\
         <!-- PLACE YOUR LOGO HERE -->\
-        <span id="logo"> <img src="../img/demo/logo.png" alt="SmartAdmin"> </span>\
+        <span id="logo"> \
+            <a href="javascript:void(0);" class="btn btn-default">\
+              <i class="fa fa-reorder"></i>\
+            </a>\
+        <!--<img src="../img/demo/logo.png" alt="SmartAdmin">-->\
+        </span>\
         <!-- END LOGO PLACEHOLDER -->\
         <!-- Note: The activity badge color changes when clicked and resets the number to 0\
           Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->\
@@ -112,11 +117,8 @@
         <div id="logout" class="btn-header transparent pull-right">\
           <div class="login-barra-header">\
             <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">\
-              <img src="../img/avatars/sunny.png" alt="me" class="online" />\
-              <span>\
-                João da Silva\
-              </span>\
-              <i class="fa fa-angle-down"></i>\
+              <!--<img src="../img/avatars/sunny.png" alt="me" class="online" />--> \
+              <i class="fa fa-sign-out"></i>\
             </a>\
           </div>\
           <!--<span> <a href="../login.html" title="Sair" data-action="userLogout" data-logout-msg="Você pode melhorar sua segurança ainda depois de sair fechando esse navegador"><i class="fa fa-sign-out"></i></a> </span>-->\
