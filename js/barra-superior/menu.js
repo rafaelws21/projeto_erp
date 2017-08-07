@@ -3,71 +3,12 @@
       <div id="logo-group">\
         <!-- PLACE YOUR LOGO HERE -->\
         <span id="logo"> \
-            <a href="javascript:void(0);" class="btn btn-default">\
+            <a href="javascript:void(0);" class="btn btn-default" id="show-shortcut" data-action="toggleShortcut">\
               <i class="fa fa-reorder"></i>\
             </a>\
-        <!--<img src="../img/demo/logo.png" alt="SmartAdmin">-->\
         </span>\
         <!-- END LOGO PLACEHOLDER -->\
-        <!-- Note: The activity badge color changes when clicked and resets the number to 0\
-          Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->\
-        <span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 21 </b> </span>\
-        <!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->\
-        <div class="ajax-dropdown">\
-          <!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->\
-          <div class="btn-group btn-group-justified" data-toggle="buttons">\
-            <label class="btn btn-default">\
-                <input type="radio" name="activity" id="ajax/notify/mail.html">\
-                Msgs (14) </label>\
-            <label class="btn btn-default">\
-                <input type="radio" name="activity" id="ajax/notify/notifications.html">\
-                notify (3) </label>\
-            <label class="btn btn-default">\
-                <input type="radio" name="activity" id="ajax/notify/tasks.html">\
-                Tasks (4) </label>\
-          </div>\
-          <!-- notification content -->\
-          <div class="ajax-notifications custom-scroll">\
-            <div class="alert alert-transparent">\
-              <h4>Click a button to show messages here</h4>\
-              This blank page message helps protect your privacy, or you can show the first message here automatically.\
-            </div>\
-            <i class="fa fa-lock fa-4x fa-border"></i>\
-          </div>\
-          <!-- end notification content -->\
-          <!-- footer: refresh area -->\
-          <span> Última atualização: 12/12/2016 9:43AM \
-              <button type="button" data-loading-text="<i class="fa fa-refresh fa-spin"></i> Loading..." class="btn btn-xs btn-default pull-right">\
-                <i class="fa fa-refresh"></i>\
-              </button> </span>\
-          <!-- end footer -->\
-        </div>\
-        <!-- END AJAX-DROPDOWN -->\
       </div>\
-      <!-- projects dropdown -->\
-      <div class="project-context hidden-xs">\
-        <span class="label">Projeto:</span>\
-        <span class="project-selector dropdown-toggle" data-toggle="dropdown">Projetos Recentes <i class="fa fa-angle-down"></i></span>\
-        <ul class="dropdown-menu">\
-          <li>\
-            <a href="javascript:void(0);">Sistema 01</a>\
-          </li>\
-          <li class="divider"></li>\
-          <li>\
-            <a href="javascript:void(0);">Sistema 02</a>\
-          </li>\
-          <li class="divider"></li>\
-          <li>\
-            <a href="javascript:void(0);">Sistema 03 </a>\
-          </li>\
-          <li class="divider"></li>\
-          <li>\
-            <a href="../pagina-inicial/pagina-inicial.html"><i class="fa fa-power-off"></i> Fechar Todas</a>\
-          </li>\
-        </ul>\
-        <!-- end dropdown-menu-->\
-      </div>\
-      <!-- end projects dropdown -->\
       <!-- #SEARCH -->\
           <!-- input: search field -->\
           <form action="search.html" class="header-search pull-left">\
@@ -78,6 +19,22 @@
             <a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>\
           </form>\
           <!-- end input: search field -->\
+          <!-- projects dropdown -->\
+      <div class="project-context hidden-xs">\
+        <span class="label"> </span>\
+        <span class="project-selector dropdown-toggle" data-toggle="dropdown">Demandas <i class="fa fa-angle-down"></i></span>\
+        <ul class="dropdown-menu">\
+          <li>\
+            <a href="javascript:void(0);">Sistema 01</a>\
+          </li>\
+          <li class="divider"></li>\
+          <li>\
+            <a href="../pagina-inicial/pagina-inicial.html"><i class="fa fa-power-off"></i> Fechar Todas</a>\
+          </li>\
+        </ul>\
+        <!-- end dropdown-menu-->\
+      </div>\
+      <!-- end projects dropdown -->\
       <!-- pulled right: nav area -->\
       <div class="pull-right">\
         <!-- #MOBILE -->\
@@ -116,8 +73,7 @@
         <!-- logout button -->\
         <div id="logout" class="btn-header transparent pull-right">\
           <div class="login-barra-header">\
-            <a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">\
-              <!--<img src="../img/avatars/sunny.png" alt="me" class="online" />--> \
+            <a href="../login.html">\
               <i class="fa fa-sign-out"></i>\
             </a>\
           </div>\

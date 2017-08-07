@@ -155,10 +155,27 @@
      background-image: linear-gradient(to bottom,rgba(110, 88, 122, 0.53),rgba(110, 88, 122, 0.12));
 }
 
+
+#logo {
+    margin-top: 9px;
+}
 #project-context>:first-child, .project-context>:first-child {
     color: #686868;
 }
 
 #logout.btn-header>:first-child>a {
     padding: 0;
+}
+
+
+#header>:first-child, aside {
+    width: 60px;
+}
+
+.tree>ul {
+    font-size: 21px;
+}
+
+hr {
+    border-top: 1px solid #dcdada;
 }
